@@ -1,0 +1,17 @@
+hystrix:
+  command:
+    CepService#getCep2(int):
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 200
+
+
+
+feign:
+  hystrix:
+    enabled: true
+
+
+
+
